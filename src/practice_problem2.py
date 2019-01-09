@@ -215,7 +215,7 @@ def practice_problem2b(sequence):
       :type sequence: [str]
     """
     ###########################################################################
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #     The testing code is already written for you (above).
     ###########################################################################
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
@@ -223,14 +223,14 @@ def practice_problem2b(sequence):
     #    TIME ESTIMATE:   10 minutes.
     ###########################################################################
 
-    liz = []
+    liz = ''
     for k in range(len(sequence)):
         word = sequence[k]
         if len(word) > 0:
             letter = str(word[0])
         else:
             letter = str()
-        liz = liz + [letter]
+        liz = liz + letter
     return liz
 
 ###############################################################################
