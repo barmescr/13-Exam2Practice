@@ -3,8 +3,8 @@ PRACTICE Exam 2, practice_problem 3.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Cleo Barmes.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
 # Students:
@@ -34,11 +34,11 @@ import rosegraphics as rg
 
 def main():
     """ Calls the   TEST   functions in this module. """
-    run_test_practice_problem3a()
+    #run_test_practice_problem3a()
     run_test_practice_problem3b()
-    run_test_practice_problem3c()
-    run_test_practice_problem3d()
-    run_test_practice_problem3e()
+    #run_test_practice_problem3c()
+    #run_test_practice_problem3d()
+    #run_test_practice_problem3e()
 
 
 def is_prime(n):
@@ -173,7 +173,7 @@ def practice_problem3a(circles):
       :type sequence: [rg.Circle]
     """
     ###########################################################################
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #     The testing code is already written for you (above).
     ###########################################################################
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
@@ -181,6 +181,14 @@ def practice_problem3a(circles):
     #    TIME ESTIMATE:   10 minutes.
     ###########################################################################
 
+    total = 1
+    if len(circles) > 0:
+        for k in range(len(circles)):
+            x_value = circles[k].center.x
+            total = total * x_value
+        return total
+    else:
+        return 1
 
 def run_test_practice_problem3b():
     """ Tests the    practice_problem3b    function. """
@@ -355,6 +363,8 @@ def practice_problem3b(sequence):
     #    TIME ESTIMATE:   8 minutes.
     ###########################################################################
 
+    for k in range(len(sequence)):
+        
 
 def run_test_practice_problem3c():
     """ Tests the    practice_problem3c    function. """
